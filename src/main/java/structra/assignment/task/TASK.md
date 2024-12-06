@@ -5,7 +5,7 @@
 Your implementation should be placed in the package `src/main/java/structra/assignment/task/impl`. You may use Example.java
 as a reference, but you dont have to.
 
-## 1. **Plugin Creation**
+## a). **Plugin Creation**
 
 - **Objective**: Create a class that implements the `KeyProvider.java` interface. Its purpose is to allow for simple
   retrieval of an API key via the `getApiKey` method. The API key can be the one required by `Mimic.java` or a genuine
@@ -15,13 +15,13 @@ as a reference, but you dont have to.
   `ChatGPTModel.java`)
     - `structra-1343abnc-dGhpcyBpcyBub3Qgb3VyIGFwaSBrZXksIG5pY2UgdHJ5IHRobyA6KQ==`
 
-## 2. **GUI Implementation**
+## b) **GUI Implementation**
 
 - **Objective**: Develop an interactive Graphical User Interface (GUI) to display questions dynamically, powered by the
   `ModelQuestionProvider.java`.
 
-- **Technologies**: **Swing** (Java GUI toolkit). Reference
-  the [official documentation](https://docs.oracle.com/javase/tutorial/uiswing/) for guidance.
+- **Technologies**: **Swing** (Java GUI toolkit). We provide example code in Example.java. You can also reference
+  the [official documentation](https://docs.oracle.com/javase/tutorial/uiswing/) for guidance, but here the point is not to become a GUI developer, just to practice using a framework based on example code.
 
 - **Components to Include**:
     - **Main Window**: The main container (e.g `JFrame`) of all other elements.
@@ -38,7 +38,7 @@ as a reference, but you dont have to.
     - Example: <p>
       ![GUI Example](/src/main/resources/GUI_example.png) </p>
 
-## 3. **Multiple Choice Formatter**
+## c). **Multiple Choice Formatter**
 
 - **Objective**: Add your implementation to generate and format multiple-choice questions, using the model
   `ChatGPTModel.java` (or its mock, `Mimic.java`).
@@ -50,16 +50,16 @@ as a reference, but you dont have to.
         - Refer to `OpenQuestionTarget.java` and `OpenQuestionContext.java` for guidance [^1].
     - Format the question and answer options to be displayed in the GUI.
 
-## 4. **Refactoring - UML diagrams**
+## d) **Refactoring**
 
-- **Objective**: Propose a refactor of the `QuestionTypes.java` enumeration, making it more modular, maintainable, and
+- **Objective**: Propose a refactoring of the `QuestionTypes.java` enumeration, making it more modular, maintainable, and
   extensible.
 
 - **Steps**:
     - Analyze the current `QuestionTypes.java`.
     - Create a UML [^2] diagram that outlines how to improve `QuestionTypes.java`.
 
-## 5. **Documentation Improvements**
+## e). **Documentation Improvements**
 
 - **Objective**: Suggest improvements for any documentation inside `structra/assignment/framework`. This includes
   docstrings as well, as UML diagrams (if you feel like creating one).
@@ -69,15 +69,15 @@ as a reference, but you dont have to.
     - Suggest changes by adding documentation inside the respective files / packages.
     - Write a *short* text justifying your changes.
 
-## 6. **Reflection**
+## f). **Reflection**
 
-- **Objective**: Reflect on what you have learned so far by discovering similarities between concepts used in the
-  lecture and the actual implementation in `structra/assignment/framework`.
+- **Objective**: Recap the lectures and check if the framework adheres to the principles and suggestions for architecture and implementation.
 
 - **Steps**:
-    - Familiarize yourself with the design patterns used and design choices made.
     - Have a look at the lecture material again.
-    - Write a text detailing which similarities you have found.
+    - Familiarize yourself with the design patterns used and design choices made.
+    - Implement one improvement in the code and document it.
+    - If you cannot come up with an improvement to the framework code, discuss whether and how your application code adheres to the SOLID principles (based on one example) and whether a design pattern from the lecture could be used..
 
 [^1]: Additional documentation can be found in `structra/assignment/framework/docs`.
 [^2]: PlantUML
